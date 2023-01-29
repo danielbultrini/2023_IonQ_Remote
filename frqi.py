@@ -12,4 +12,13 @@ def cFRQI(a,compression):
     a = grayPermutation(a) 
     
     idx = list(range(0,n))
+
+
+#set smallest absolute values of a to zero according to compression param
+    cutoff = (compression/100.0) * n
+    for it in idx[:cutoff]:
+        a[it]=0.0
+    
+
+
     
