@@ -29,6 +29,8 @@ def isfwht(a):
         j*=2 
     return a            
 
+def ispow2(x):
+    return not (x&x-1)
 
 def nextpow2(x):
     x-=1
